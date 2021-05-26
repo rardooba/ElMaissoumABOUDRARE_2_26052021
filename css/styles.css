@@ -1,0 +1,41 @@
+/*ResetCss*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+bleu #0065FC
+bleu clair #DEEBFF
+gris bg #F2F2F2
+*/
+
+/*largeur du viewport - standart W3C*/
+@viewport {
+    width: device-width;
+    zoom: 1;
+ }
+/*Large device (desktops, 992px and up)----------------------*/
+ @media (min-width: 992px) {
+     
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /*Medium devices (tablets, 768px and up)----------------------*/
+ @media (min-width: 768px) {
+     
+}
+/*Small devices (phones, 576px and up)----------------------*/
+@media (min-width: 576px) {
+     
+}
