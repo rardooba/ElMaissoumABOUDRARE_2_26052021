@@ -17,14 +17,14 @@
         <title>Réservia</title>
     </head>
     <body>
-<!--website BOX--------------->
+<!--website BOX/////////////-->
         <div id="main_wrapper">
-<!--HEADER--------->
+<!--HEADER///////-->
             <header>
                 <div id="logo">
                     <img src="/img/logo/Reservia.svg" alt="logo de Reservia">
                 </div>
-                <nav aria-labelledby="primary_navigation">
+                <nav>
                     <ul>
                         <li><a href="#herbergements">Hébergements</a></li>
                         <li><a href="#activites">Activités</a></li>
@@ -34,8 +34,10 @@
             </header>
 <!--LODGING SEARCH BAR + CATEGORIES FILTER-->
             <section id="search">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En pleine ville ou en pleine nature</p>
+                <div class="primary_title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En pleine ville ou en pleine nature</p>
+                </div>
                 <form method="post" id="search_bar">
                     <label for="input_search">
                         <i class="fas fa-map-marker-alt" id="icon_map"></i>
@@ -55,13 +57,13 @@
                 </div>
                 <data value="500"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</data>
             </section>
-<!--MAIN CONTENT------------->
-            <main role="main">
-<!--LODGING LEFT SIDE--->
+<!--MAIN CONTENT///////////-->
+            <main>
+<!--LODGING LEFT SIDE -->
                 <article>
                     <h2 id="herbergements">Hébergements à Marseille</h2>
                     <div id="lodging_all_left">
-                        <div class="squarre_box">
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="cannebiere_img"></div>
                             <h3>Auberge la Cannebière</h3>
@@ -73,8 +75,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
-                        <div class="squarre_box">
+                        </article>
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="port_img"></div>
                             <h3>Hôtel du port</h3>
@@ -86,8 +88,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Blue_color"></i> 
                             </p>
-                        </div>
-                        <div class="squarre_box">
+                        </article>
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="mouettes_img"></div>
                             <h3>Hôtel Les mouettes</h3>
@@ -99,8 +101,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
-                        <div class="squarre_box">
+                        </article>
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="mer_img"></div>
                             <h3>Hôtel de la mer</h3>
@@ -112,8 +114,8 @@
                                 <i class="fas fa-star Grey_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
-                        <div class="squarre_box">
+                        </article>
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="panier_img"></div>
                             <h3>Auberge Le Panier</h3>
@@ -125,8 +127,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
-                        <div class="squarre_box">
+                        </article>
+                        <article class="squarre_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="amina_img"></div>
                             <h3>Hôtel chez Amina</h3>
@@ -138,7 +140,7 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Blue_color"></i> 
                             </p>
-                        </div>
+                        </article>
                     </div>
                     <p><a href="#"><strong>Afficher plus</strong></a></p>
                 </article>
@@ -149,7 +151,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div id="lodging_all_right">
-                        <div class="rect_box">
+                        <article class="rect_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="matin_img"></div>
                             <h3>Hôtel Le soleil du matin</h3>
@@ -161,8 +163,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Blue_color"></i> 
                             </p>
-                        </div>
-                        <div class="rect_box">
+                        </article>
+                        <article class="rect_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="coeur_img"></div>
                             <h3>Au coeur de l'eau Chambre d'hôtes</h3>
@@ -174,8 +176,8 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
-                        <div class="rect_box">
+                        </article>
+                        <article class="rect_box">
                             <a href="#" class="clickable_div"></a>
                             <div id="blanc_img"></div>
                             <h3>Hôtel Tout bleu et Blanc</h3>
@@ -187,11 +189,11 @@
                                 <i class="fas fa-star Blue_color"></i>
                                 <i class="fas fa-star Grey_color"></i> 
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </aside>
             </main>
-<!--ACTIVITIES---------------------->
+<!--ACTIVITIES////////////////////-->
             <section id="activities">
                 <h2>Activités à Marseille</h2>
                 <div id="activities_all_box">
@@ -227,7 +229,7 @@
                     </div>
                 </div>
             </section>
-<!--FOOTER--------->
+<!--FOOTER///////-->
             <footer>
                 <div id="list_about">
                     <h4>À propos</h4>
