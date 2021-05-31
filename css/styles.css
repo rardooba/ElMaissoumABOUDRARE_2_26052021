@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
 }
-
 /*
 bleu #0065FC
 bleu clair #DEEBFF
@@ -21,7 +20,7 @@ html, body {
     font-size: 16px;
 }
 .main-wrapper {
-    width: 900px;
+    width: 793px;
     margin: auto;
 }
 h1, h2 {
@@ -53,9 +52,33 @@ a {
     width: 100%;
     margin-bottom: 20px;
 }
-
-
-
+.l-main {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+.l-lodging {
+    width: 520px;
+    height: 395px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-top: 25px;
+    margin-right: 23px;
+}
+.l-aside {
+    width: 249px;
+    height: 395px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 25px;
+}
+.l-footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+}
 /*--------------------------------------------------------*\
                             MODS
 \*--------------------------------------------------------*/
@@ -158,7 +181,7 @@ a {
     margin-bottom: 10px;
 }
 .filter_title {
-    margin-right: 18px;
+    margin-right: 20px;
 }
 .filter p {
     font-weight: bold;
@@ -172,17 +195,28 @@ a {
     height: 30px;
     width: 30px;
     margin-right: 5px;
+    position: relative;
+    right: 2px;
+    transition:2.5s;
+}
+.filter_cat_icon:hover {
+    transform:rotate(720deg);
 }
 .fas {
     text-align: center;
 }
 .filter_cat_label {
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 30px;
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
 }
+.filter_cat_label:hover {
+    background-color: #0065FC;
+    color: #fff;
+    border-color: #DEEBFF;
+} 
 /*INFO*/
 .filter-result_icon {
     font-size: 9px;
@@ -200,15 +234,284 @@ a {
 /*--------------------------------------------------------*\
                      LODGING LEFT SIDE
 \*--------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
+.lodging_h2{
+    padding-left: 25px;
+}
+.lodging_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+.lodging_box {
+    background-color: #fff;
+    width: 145px;
+    height: 130px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
+    margin: 15px 17px 0 0;
+    transform: scale(1);
+    transition: 400ms;
+}
+.lodging_box:hover{
+    transform: scale(1.15);
+}
+.lodging_box--clickable {
+    position: absolute;
+    width: 145px;
+    height: 130px;
+    z-index: 1;
+}
+.lodging_img {
+    position: relative;
+    overflow: hidden;
+    width: 140px;
+    height: 68px;
+    margin: 2px 2px 10px 2px;
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid #fff;
+}
+.cannebiere {
+    width: 144px;
+    position: absolute;
+    left: -1%;
+    top: -22%;
+    background-size: cover;
+}
+.hPort {
+    width: 144px;
+    position: absolute;
+    left: -1%;
+    top: -19%;
+    background-size: cover;
+}
+.mouettes {
+    width: 144px;
+    position: absolute;
+    left: -2%;
+    top: -21%;
+    background-size: cover;
+}
+.hMer {
+    
+    width: 144px;
+    position: absolute;
+    left: 0%;
+    top: -49%;
+    background-size: cover;
+}
+.lePanier {
+    width: 143px;
+    position: absolute;
+    left: -1%;
+    top: -11%;
+    background-size: cover;
+}
+.hAmina {
+    width: 144px;
+    position: absolute;
+    left: -2%;
+    top: -109%;
+    background-size: cover;
+}
+.lodging_txtbox {
+    padding-left: 10px;
+}
+.lodging_title {
+    margin-bottom: 5px;
+}
+.lodging_price {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+}
+.is-blue {
+    color: #0065FC;
+}
+.is-grey {
+    color: #F2F2F2;
+}
+.afficher-plus {
+    padding-left: 25px;
+    margin-bottom: 29px;
+}
+.fa-star {
+    font-size: 0.5rem;
+}
+/*--------------------------------------------------------*\
+                     LODGING RIGHT SIDE
+\*--------------------------------------------------------*/
+.aside_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.lodging-as_box {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 202px;
+    height: 85px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
+    margin-bottom: 15px;
+    transform: scale(1);
+    transition: 400ms;
+}
+.lodging-as_box:hover{
+    transform: scale(1.15);
+}
+.lodging-as_box--clickable {
+    position: absolute;
+    width: 202px;
+    height: 85px;
+    z-index: 1;
+}
+.lodging-as_img {
+    position: relative;
+    width: 76px;
+    height: 81px;
+    overflow: hidden;
+    margin: 2px 0 2px 2px;
+    border-radius: 10px 0 0 10px;
+}
+.soleilMatin {
+    width: 135px;
+    position: absolute;
+    left: -42%;
+    top: -4%;
+    background-size: cover;
+}
+.coeurEau{
+    width: 135px;
+    position: absolute;
+    left: -44%;
+    top: -5%;
+    background-size: cover;
+}
+.bleuBlanc {
+    width: 85px;
+    position: absolute;
+    left: -8%;
+    top: -35%;
+    background-size: cover;
+}
+.lodging-as_txtbox {
+    width: 105px;
+    padding: 11px 0 0 11px;
+}
+.lodging-as_stars {
+    margin-top: 15px;
+}
+/*--------------------------------------------------------*\
+                        ACTIVITIES
+\*--------------------------------------------------------*/
+.activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
+}
+.activities_twobox--last .activity {
+    margin-right: 0;
+}
+.activity_title {
+    height: 33px;
+    padding: 13px 0 11px 11px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.activities_title {
+    margin-bottom: 15px;
+}
+.activity--clickable {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 179px;
+}
+.activities_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.activity_img--long, .activity_img--medium, .activity_img--small {
+    width: 179px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.activity_img--long, .long {
+    height: 230px;
+}
+.activity_img--medium, .medium{
+    height: 107px;
+}
+.activity_img--small, .small {
+    height: 98px;
+}
+.vieuxPort {
+    width: 400px;
+    position: absolute;
+    left: -62%;
+    top: -1%;
+    background-size: cover;
+}
+.fortPomegues {
+    width: 200px;
+    position: absolute;
+    left: -1%;
+    top: -157%;
+    background-size: cover;
+}
+.frioul {
+    width: 245px;
+    position: absolute;
+    left: -22%;
+    top: -62%;
+    background-size: cover;
+}
+.parcNational {
+    width: 400px;
+    position: absolute;
+    left: -62%;
+    top: -1%;
+    background-size: cover;
+}
+.notreDame {
+    width: 297px;
+    position: absolute;
+    left: -45%;
+    top: -42%;
+    background-size: cover;
+}
+.longChamp {
+    width: 257px;
+    position: absolute;
+    left: -22%;
+    top: -74%;
+    background-size: cover;
+}
+/*--------------------------------------------------------*\
+                        FOOTER
+\*--------------------------------------------------------*/
+.footer_list h4 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer_list ul {
+    list-style-type: none;
+    font-size: 0.7rem;
+}
+.footer_list ul li {
+    margin-bottom: 5px;
+}
 /*Large device (desktops, 992px and up)----------------------
  @media (min-width: 992px) {
      
