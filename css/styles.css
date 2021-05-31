@@ -12,32 +12,217 @@ bleu #0065FC
 bleu clair #DEEBFF
 gris bg #F2F2F2
 */
+/*--------------------------------------------------------*\
+                            BASE
+\*--------------------------------------------------------*/
+html, body {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+.main-wrapper {
+    width: 900px;
+    margin: auto;
+}
+h1, h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 0.6rem;
+}
+p {
+    font-size: 0.7rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*--------------------------------------------------------*\
+                            Layout
+\*--------------------------------------------------------*/
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.l-search {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-/*largeur du viewport - standart W3C*/
-@viewport {
-    width: device-width;
-    zoom: 1;
- }
-/*Large device (desktops, 992px and up)----------------------*/
+
+
+/*--------------------------------------------------------*\
+                            MODS
+\*--------------------------------------------------------*/
+/*--------------------------------------------------------*\
+                            HEADER
+\*--------------------------------------------------------*/
+/*LOGO*/
+.logo {
+    cursor: pointer;
+}
+.logo-img {
+    height: 30px;
+}
+/*NAV*/
+.navigation, .navigation ul {
+    display: flex;
+}
+.navigation ul {
+    list-style-type: none;
+}
+.navigation_ul li {
+    font-size: 0.7rem;
+    margin-right: 15px;
+}
+.navigation_ul a {
+    padding: 39px 15px 0;
+}
+.navigation_ul a:hover {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+}
+.sign-in {
+    font-weight: bold;
+    color: #0065FC;
+    cursor: pointer;
+    padding-left: 15px;
+}
+/*--------------------------------------------------------*\
+                    LODGING SEARCH BAR
+\*--------------------------------------------------------*/
+.search_title {
+    margin-bottom: 12px;
+}
+.search_title h1 {
+    margin-bottom: 5px;
+}
+.search_title p, .filter-result{
+    font-size: 0.6rem;
+    letter-spacing: 0.025rem;
+    color: #4e4e4e;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.search-bar label {
+    padding: 5px 5px 6px 12px;
+    width: 30px;
+    height: 30px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+.search-bar_icon {
+    font-size: 12px;
+}
+.search-bar input {
+    height: 30px;
+    border: 1px solid #F2F2F2;
+    padding-left: 10px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.search-bar input:focus {
+    outline: none; /*how to change outline color and cancel border radius*/
+}
+.search-bar ::placeholder {
+    color: #000000;
+}
+.search-bar_submit {
+    cursor: pointer;
+    font-size: 0.7rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px 6px 10px;
+    border: none;
+}
+/*--------------------------------------------------------*\
+                    CATEGORIES FILTER
+\*--------------------------------------------------------*/
+.filter, .filter_cat {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.filter {
+    margin-bottom: 10px;
+}
+.filter_title {
+    margin-right: 18px;
+}
+.filter p {
+    font-weight: bold;
+    color: #000000;
+}
+.filter_cat_icon {
+    color: #0065FC;
+    padding: 8px;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.fas {
+    text-align: center;
+}
+.filter_cat_label {
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding-right: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*INFO*/
+.filter-result_icon {
+    font-size: 9px;
+    color: #0065FC;
+    padding: 5px 5px 5px 6px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F2F2F2;
+    margin-right: 8px;
+}
+/*--------------------------------------------------------*\
+                        MAIN CONTENT
+\*--------------------------------------------------------*/
+/*--------------------------------------------------------*\
+                     LODGING LEFT SIDE
+\*--------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*Large device (desktops, 992px and up)----------------------
  @media (min-width: 992px) {
      
  }
+*/
 
-
-
-
-
-
-
-
-
-
-
- /*Medium devices (tablets, 768px and up)----------------------*/
+ /*Medium devices (tablets, 768px and up)----------------------
  @media (min-width: 768px) {
      
 }
-/*Small devices (phones, 576px and up)----------------------*/
+*/
+
+/*Small devices (phones, 576px and up)----------------------
 @media (min-width: 576px) {
      
 }
+*/
