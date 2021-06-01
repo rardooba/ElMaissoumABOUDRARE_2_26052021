@@ -1,0 +1,158 @@
+.main-wrapper {
+    width: 275px;
+    margin: auto;
+}
+h1, h2 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 0.7rem;
+}
+.search_title p, .filter-result {
+    font-size: 0.65rem;
+}
+.l-main {
+    flex-direction: column-reverse;
+}
+.l-header {
+    display: block;
+}
+.l-lodging {
+    background-color: transparent;
+}
+.l-aside {
+    border-radius: 0;
+    padding: 25px 25px 0 25px;
+}
+.l-activities {
+    padding: 0 22px;
+}
+.l-footer {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+}
+.logo {
+    margin-bottom: 15px;
+}
+.navigation {
+    position: relative;
+}
+.sign-in {
+    position: absolute;
+    top: -42px;
+    right: 0px;
+}
+.navigation_ul a {
+    padding: 0 21px 15px;
+    border-bottom: 2px solid #F2F2F2;
+}
+.navigation_ul a:hover {
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+}
+.navigation_ul li {
+    margin-right: 0;
+}
+.search-bar {
+    position: relative;
+}
+.search-bar input {
+    width: 75%;
+}
+.search-bar_submit::after {
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    content: '\f002';
+}
+.search-bar_submit {
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+}
+.filter_title {
+    margin-bottom: 10px;
+}
+.filter, .filter_cat {
+    flex-wrap: wrap;
+}
+.filter-cat {
+    margin-top: 10px;
+}
+.filter_cat_label {
+    margin: 0 5px 5px 0;
+}
+.filter-result {
+    width: 236px;
+    display: block;
+    position: relative;
+    padding-left: 23px;
+}
+.filter-result_icon {
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+.lodging_box:hover, .lodging-as_box:hover {
+    transform: none;
+}
+.lodging_h2, .aside_title h2, .activities_title {
+    font-size: 0.8rem;
+}
+.lodging_price {
+    font-size: 0.6rem;
+}
+.fa-star {
+    font-size: 0.5rem;
+}
+.lodging-as_img {
+    flex: 3.6;
+}
+.lodging-as_txtbox {
+    padding: 11px 0 0 7px;
+}
+.activities_container {
+    flex-direction: column;
+}
+.activity {
+    margin-right: 0;
+}
+.activity_img--long, .activity_img--medium, .activity_img--small {
+    width: 191px;
+}
+.activity_img--long, .long, .activity_img--medium, .medium, .activity_img--medium, .medium  {
+    height: 110px;
+}
+.activity_title {
+    padding: 8px 10px;
+    margin-bottom: 6px;
+}
+.vieuxPort {
+    width: 325px;
+    left: 0%;
+    top: -53%;
+}
+.fortPomegues {
+    width: 200px;
+    top: -157%;
+}
+.frioul {
+    width: 240px;
+    top: -15%;
+}
+.parcNational {
+    width: 276px;
+    left: -39%;
+    top: -97%;
+}
+.notreDame {
+    width: 240px;
+    top: -11%;
+}
+.longChamp {
+    width: 230px;
+    top: -60%;
+}
+.footer_list {
+    margin-bottom: 25px;
+}

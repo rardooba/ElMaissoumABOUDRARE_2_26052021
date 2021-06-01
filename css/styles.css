@@ -178,6 +178,9 @@ a {
     padding: 10px 14px;
     border: none;
 }
+.search-bar_submit::after {
+    content: 'Rechercher';
+}
 /*--------------------------------------------------------*\
                     CATEGORIES FILTER
 \*--------------------------------------------------------*/
@@ -382,27 +385,27 @@ a {
 .soleilMatin {
     width: 164px;
     position: absolute;
-    left: -39%;
+    left: -76%;
     top: -4%;
     background-size: cover;
 }
 .coeurEau{
     width: 142px;
     position: absolute;
-    left: -24%;
+    left: -57%;
     top: -5%;
     background-size: cover;
 }
 .bleuBlanc {
     width: 105px;
     position: absolute;
-    left: -8%;
+    left: -20%;
     top: -34%;
     background-size: cover;
 }
 .lodging-as_txtbox {
     padding: 11px 0 0 13px;
-    flex: 4;
+    flex: 5;
 }
 .lodging-as_stars {
     margin-top: 23px;
@@ -517,20 +520,3 @@ a {
 .footer_list ul li {
     margin-bottom: 7px;
 }
-/*Large device (desktops, 992px and up)----------------------
- @media (min-width: 992px) {
-     
- }
-*/
-
- /*Medium devices (tablets, 768px and up)----------------------
- @media (min-width: 768px) {
-     
-}
-*/
-
-/*Small devices (phones, 576px and up)----------------------
-@media (min-width: 576px) {
-     
-}
-*/
