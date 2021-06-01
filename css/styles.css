@@ -20,18 +20,18 @@ html, body {
     font-size: 16px;
 }
 .main-wrapper {
-    width: 793px;
+    width: 1024px;
     margin: auto;
 }
 h1, h2 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 h3 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 a {
     text-decoration: none;
@@ -50,34 +50,36 @@ a {
 }
 .l-search {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .l-main {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 35px;
 }
 .l-lodging {
-    width: 520px;
-    height: 395px;
+    width: 100%;
     background-color: #F2F2F2;
     border-radius: 10px;
     padding-top: 25px;
     margin-right: 23px;
+    flex: 3;
 }
 .l-aside {
-    width: 249px;
-    height: 395px;
+    width: 100%;
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 25px;
+    flex: 1;
 }
 .l-footer {
+    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    padding: 30px;
-    justify-content: space-between;
+    padding: 30px 0;
+    justify-content: flex-start;
 }
 /*--------------------------------------------------------*\
                             MODS
@@ -90,7 +92,7 @@ a {
     cursor: pointer;
 }
 .logo-img {
-    height: 30px;
+    height: 40px;
 }
 /*NAV*/
 .navigation, .navigation ul {
@@ -100,11 +102,11 @@ a {
     list-style-type: none;
 }
 .navigation_ul li {
-    font-size: 0.7rem;
-    margin-right: 15px;
+    font-size: 0.8rem;
+    margin-right: 18px;
 }
 .navigation_ul a {
-    padding: 39px 15px 0;
+    padding: 44px 16px 0;
 }
 .navigation_ul a:hover {
     border-top: 1px solid #0065FC;
@@ -120,13 +122,13 @@ a {
                     LODGING SEARCH BAR
 \*--------------------------------------------------------*/
 .search_title {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 .search_title h1 {
     margin-bottom: 5px;
 }
 .search_title p, .filter-result{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     letter-spacing: 0.025rem;
     color: #4e4e4e;
 }
@@ -136,22 +138,23 @@ a {
     margin-bottom: 20px;
 }
 .search-bar label {
-    padding: 5px 5px 6px 12px;
-    width: 30px;
-    height: 30px;
+    padding: 9px 13px;
+    width: 35px;
+    height: 35px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
 }
 .search-bar_icon {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 .search-bar input {
-    height: 30px;
+    height: 35px;
     border: 1px solid #F2F2F2;
-    padding-left: 10px;
+    padding-left: 14px;
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    width: 16%;
 }
 .search-bar input:focus {
     outline: none; /*how to change outline color and cancel border radius*/
@@ -161,12 +164,12 @@ a {
 }
 .search-bar_submit {
     cursor: pointer;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #ffffff;
     font-weight: bold;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
-    padding: 5px 10px 6px 10px;
+    padding: 10px 14px;
     border: none;
 }
 /*--------------------------------------------------------*\
@@ -178,7 +181,7 @@ a {
     align-items: baseline;
 }
 .filter {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .filter_title {
     margin-right: 20px;
@@ -189,18 +192,15 @@ a {
 }
 .filter_cat_icon {
     color: #0065FC;
-    padding: 8px;
+    padding: 10px 6px;
     background-color: #DEEBFF;
     border-radius: 30px;
     height: 30px;
     width: 30px;
-    margin-right: 5px;
+    margin-right: 9px;
     position: relative;
     right: 2px;
-    transition:2.5s;
-}
-.filter_cat_icon:hover {
-    transform:rotate(720deg);
+    font-size: 0.8rem;
 }
 .fas {
     text-align: center;
@@ -208,8 +208,8 @@ a {
 .filter_cat_label {
     border: 2px solid #F2F2F2;
     border-radius: 30px;
-    padding-right: 10px;
-    margin-right: 15px;
+    padding-right: 13px;
+    margin-right: 17px;
     cursor: pointer;
 }
 .filter_cat_label:hover {
@@ -219,7 +219,7 @@ a {
 } 
 /*INFO*/
 .filter-result_icon {
-    font-size: 9px;
+    font-size: 0.6rem;
     color: #0065FC;
     padding: 5px 5px 5px 6px;
     border-radius: 20px;
@@ -241,89 +241,86 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding-left: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .lodging_box {
     background-color: #fff;
-    width: 145px;
-    height: 130px;
+    width: 203px;
+    height: 173px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
-    margin: 15px 17px 0 0;
-    transform: scale(1);
-    transition: 400ms;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 15%);
+    margin: 20px 25px 0 0;
+    /*transform: scale(1);
+    transition: 400ms;*/
 }
 .lodging_box:hover{
     transform: scale(1.15);
 }
 .lodging_box--clickable {
     position: absolute;
-    width: 145px;
-    height: 130px;
+    width: 203px;
+    height: 173px;
     z-index: 1;
 }
 .lodging_img {
     position: relative;
     overflow: hidden;
-    width: 140px;
-    height: 68px;
-    margin: 2px 2px 10px 2px;
+    height: 101px;
+    margin: 3px 3px 10px 3px;
     border-radius: 10px 10px 0 0;
-    border-left: 1px solid #fff;
 }
 .cannebiere {
-    width: 144px;
+    width: 219px;
     position: absolute;
-    left: -1%;
+    left: -8%;
     top: -22%;
     background-size: cover;
 }
 .hPort {
-    width: 144px;
+    width: 204px;
     position: absolute;
     left: -1%;
-    top: -19%;
-    background-size: cover;
-}
-.mouettes {
-    width: 144px;
-    position: absolute;
-    left: -2%;
     top: -21%;
     background-size: cover;
 }
-.hMer {
-    
-    width: 144px;
+.mouettes {
+    width: 218px;
+    position: absolute;
+    left: -3%;
+    top: -24%;
+    background-size: cover;
+}
+.hMer { 
+    width: 206px;
     position: absolute;
     left: 0%;
-    top: -49%;
+    top: -47%;
     background-size: cover;
 }
 .lePanier {
-    width: 143px;
+    width: 209px;
     position: absolute;
-    left: -1%;
-    top: -11%;
+    left: -3%;
+    top: -12%;
     background-size: cover;
 }
 .hAmina {
-    width: 144px;
+    width: 206px;
     position: absolute;
     left: -2%;
-    top: -109%;
+    top: -101%;
     background-size: cover;
 }
 .lodging_txtbox {
-    padding-left: 10px;
+    padding: 0 10px 0 10px;
 }
 .lodging_title {
     margin-bottom: 5px;
 }
 .lodging_price {
-    font-size: 0.6rem;
-    margin-bottom: 5px;
+    font-size: 0.7rem;
+    margin-bottom: 3px;
 }
 .is-blue {
     color: #0065FC;
@@ -333,10 +330,10 @@ a {
 }
 .afficher-plus {
     padding-left: 25px;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
 }
 .fa-star {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 /*--------------------------------------------------------*\
                      LODGING RIGHT SIDE
@@ -345,65 +342,64 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .lodging-as_box {
     display: flex;
     flex-direction: row;
     background-color: #fff;
-    width: 202px;
-    height: 85px;
+    height: 105px;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
-    margin-bottom: 15px;
-    transform: scale(1);
-    transition: 400ms;
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 15%);
+    margin-bottom: 25px;
+    /* transform: scale(1); 
+    transition: 400ms;*/
 }
 .lodging-as_box:hover{
     transform: scale(1.15);
 }
 .lodging-as_box--clickable {
     position: absolute;
-    width: 202px;
-    height: 85px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 .lodging-as_img {
     position: relative;
-    width: 76px;
-    height: 81px;
+    width: 43%;
     overflow: hidden;
-    margin: 2px 0 2px 2px;
+    margin: 3px 0 3px 3px;
     border-radius: 10px 0 0 10px;
+    flex: 3;
 }
 .soleilMatin {
-    width: 135px;
+    width: 164px;
     position: absolute;
-    left: -42%;
+    left: -39%;
     top: -4%;
     background-size: cover;
 }
 .coeurEau{
-    width: 135px;
+    width: 142px;
     position: absolute;
-    left: -44%;
+    left: -24%;
     top: -5%;
     background-size: cover;
 }
 .bleuBlanc {
-    width: 85px;
+    width: 105px;
     position: absolute;
     left: -8%;
-    top: -35%;
+    top: -34%;
     background-size: cover;
 }
 .lodging-as_txtbox {
-    width: 105px;
-    padding: 11px 0 0 11px;
+    padding: 11px 0 0 13px;
+    flex: 4;
 }
 .lodging-as_stars {
-    margin-top: 15px;
+    margin-top: 23px;
 }
 /*--------------------------------------------------------*\
                         ACTIVITIES
@@ -416,7 +412,7 @@ a {
     border-radius: 10px;
     margin-right: 25px;
     margin-bottom: 25px;
-    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 6%);
+    box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 15%);
 }
 .activities_twobox--last .activity {
     margin-right: 0;
@@ -434,83 +430,86 @@ a {
     position: absolute;
     z-index: 1;
     display: block;
-    width: 179px;
+    width: 100%;
 }
 .activities_container {
     display: flex;
     flex-wrap: wrap;
 }
 .activity_img--long, .activity_img--medium, .activity_img--small {
-    width: 179px;
+    width: 237px;
     position: relative;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
 }
 .activity_img--long, .long {
-    height: 230px;
+    height: 350px;
 }
 .activity_img--medium, .medium{
-    height: 107px;
+    height: 195px;
 }
 .activity_img--small, .small {
-    height: 98px;
+    height: 130px;
 }
 .vieuxPort {
-    width: 400px;
+    width: 541px;
     position: absolute;
-    left: -62%;
-    top: -1%;
+    left: -63%;
+    top: 0%;
     background-size: cover;
 }
 .fortPomegues {
-    width: 200px;
+    width: 246px;
     position: absolute;
     left: -1%;
-    top: -157%;
+    top: -46%;
     background-size: cover;
 }
 .frioul {
-    width: 245px;
+    width: 295px;
     position: absolute;
     left: -22%;
-    top: -62%;
+    top: -26%;
     background-size: cover;
 }
 .parcNational {
-    width: 400px;
+    width: 545px;
     position: absolute;
-    left: -62%;
-    top: -1%;
+    left: -65%;
+    top: 0%;
     background-size: cover;
 }
 .notreDame {
-    width: 297px;
+    width: 346px;
     position: absolute;
-    left: -45%;
-    top: -42%;
+    left: -21%;
+    top: -30%;
     background-size: cover;
 }
 .longChamp {
-    width: 257px;
+    width: 286px;
     position: absolute;
-    left: -22%;
-    top: -74%;
+    left: -10%;
+    top: -11%;
     background-size: cover;
 }
 /*--------------------------------------------------------*\
                         FOOTER
 \*--------------------------------------------------------*/
+.footer_list {
+    flex : 1;
+}
 .footer_list h4 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 .footer_list ul {
     list-style-type: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .footer_list ul li {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 /*Large device (desktops, 992px and up)----------------------
  @media (min-width: 992px) {
