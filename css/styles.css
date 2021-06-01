@@ -23,6 +23,12 @@ html, body {
     width: 1024px;
     margin: auto;
 }
+.mainContent, .mainFooter {
+    padding: 0 20px;
+}
+.mainFooter {
+    background-color: #F2F2F2;
+}
 h1, h2 {
     font-size: 1.1rem;
     font-weight: bold;
@@ -64,7 +70,7 @@ a {
     border-radius: 10px;
     padding-top: 25px;
     margin-right: 23px;
-    flex: 3;
+    flex: 3.3;
 }
 .l-aside {
     width: 100%;
@@ -235,12 +241,12 @@ a {
                      LODGING LEFT SIDE
 \*--------------------------------------------------------*/
 .lodging_h2{
-    padding-left: 25px;
+    padding-left: 22px;
 }
 .lodging_container {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25px;
+    padding-left: 22px;
     margin-bottom: 20px;
 }
 .lodging_box {
@@ -250,7 +256,7 @@ a {
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 15%);
-    margin: 20px 25px 0 0;
+    margin: 20px 22px 0 0;
     /*transform: scale(1);
     transition: 400ms;*/
 }
@@ -329,7 +335,7 @@ a {
     color: #F2F2F2;
 }
 .afficher-plus {
-    padding-left: 25px;
+    padding-left: 22px;
     margin-bottom: 22px;
 }
 .fa-star {
@@ -410,7 +416,7 @@ a {
     justify-content: flex-end;
     position: relative;
     border-radius: 10px;
-    margin-right: 25px;
+    margin-right: 22px;
     margin-bottom: 25px;
     box-shadow: 0px 0px 11px -1px rgb(0 0 0 / 15%);
 }
@@ -437,7 +443,7 @@ a {
     flex-wrap: wrap;
 }
 .activity_img--long, .activity_img--medium, .activity_img--small {
-    width: 237px;
+    width: 229px;
     position: relative;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
@@ -454,7 +460,7 @@ a {
 .vieuxPort {
     width: 541px;
     position: absolute;
-    left: -63%;
+    left: -66%;
     top: 0%;
     background-size: cover;
 }
@@ -462,7 +468,7 @@ a {
     width: 246px;
     position: absolute;
     left: -1%;
-    top: -46%;
+    top: -44%;
     background-size: cover;
 }
 .frioul {
