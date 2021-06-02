@@ -1,3 +1,6 @@
+/*--------------------------------------------------------*\
+                            BASE
+\*--------------------------------------------------------*/
 .main-wrapper {
     width: 555px;
     margin: auto;
@@ -8,21 +11,35 @@ h1, h2 {
 h3 {
     font-size: 0.9rem;
 }
-.fa-chart-line {
-    display: none;
+/*--------------------------------------------------------*\
+                            Layout
+\*--------------------------------------------------------*/
+.l-main {
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
 }
-.lodging_h2 {
-    text-align: center;
+.l-lodging {  
+    flex: 1.2;
+    margin: 20px 0 20px 0;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-top: 25px;
 }
-.activities_title {
-    text-align: center;
+.l-aside {
+    height: 100%;
 }
+/*--------------------------------------------------------*\
+                            HEADER
+\*--------------------------------------------------------*/
 .navigation_ul li {
     font-size: 0.9rem;
 }
 .navigation_ul a {
     padding: 43px 16px 0;
 }
+/*--------------------------------------------------------*\
+                    LODGING SEARCH BAR
+\*--------------------------------------------------------*/
 .search-bar {
     position: relative;
 }
@@ -49,17 +66,9 @@ h3 {
 .filter p {
     margin-bottom: 10px;
 }
-.l-main {
-    flex-direction: column-reverse;
-    margin-bottom: 0px;
-}
-.l-lodging {  
-    flex: 1.2;
-    margin: 20px 0 20px 0;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    padding-top: 25px;
-}
+/*--------------------------------------------------------*\
+                     LODGING LEFT SIDE
+\*--------------------------------------------------------*/
 .lodging_price {
     font-size: 0.8rem;
 }
@@ -70,17 +79,23 @@ h3 {
 .lodging_h2{
     padding-left: 0;
 }
+.fa-chart-line {
+    display: none;
+}
+.lodging_h2 {
+    text-align: center;
+}
 .afficher-plus {
     padding-left: 48px;
 }
+/*--------------------------------------------------------*\
+                     LODGING RIGHT SIDE
+\*--------------------------------------------------------*/
 .lodging-as_stars {
     margin-top: 18px;
 }
 .aside_title {
     justify-content: center;
-}
-.l-aside {
-    height: 100%;
 }
 .lodging-as_img {
     flex: 5;
@@ -95,19 +110,25 @@ h3 {
 }
 .coeurEau {
     width: 326px;
-    left: 0%;
+    left: -20%;
     top: -69%;
 }
 .bleuBlanc {
     width: 335px;
-    left: -1%;
+    left: -17%;
     top: -240%;
 }
+/*--------------------------------------------------------*\
+                        ACTIVITIES
+\*--------------------------------------------------------*/
 .activity {
     margin-right: 0;
 }
 .activities_container {
     justify-content: space-around;
+}
+.activities_title {
+    text-align: center;
 }
 .activity_title {
     padding: 8px 0;
@@ -145,7 +166,9 @@ h3 {
     width: 399px;
     top: -52%;
 }
-
+/*--------------------------------------------------------*\
+                        FOOTER
+\*--------------------------------------------------------*/
 .footer_list {
     margin-right: 18px;
 }

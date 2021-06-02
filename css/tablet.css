@@ -1,3 +1,6 @@
+/*--------------------------------------------------------*\
+                            BASE
+\*--------------------------------------------------------*/
 .main-wrapper {
     width: 768px;
     margin: auto;
@@ -8,12 +11,33 @@ h1, h2 {
 h3 {
     font-size: 0.9rem;
 }
+/*--------------------------------------------------------*\
+                            Layout
+\*--------------------------------------------------------*/
+.l-main {
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
+}
+.l-lodging {  
+    flex: 1.2;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.l-aside {
+    height: 100%;
+}
+/*--------------------------------------------------------*\
+                            HEADER
+\*--------------------------------------------------------*/
 .navigation_ul li {
     font-size: 0.9rem;
 }
 .navigation_ul a {
     padding: 43px 16px 0;
 }
+/*--------------------------------------------------------*\
+                    LODGING SEARCH BAR
+\*--------------------------------------------------------*/
 .search-bar {
     position: relative;
 }
@@ -34,15 +58,9 @@ h3 {
 .search_title p, .filter-result {
     font-size: 0.8rem;
 }
-.l-main {
-    flex-direction: column-reverse;
-    margin-bottom: 0px;
-}
-.l-lodging {  
-    flex: 1.2;
-    margin-bottom: 20px;
-    background-color: transparent;
-}
+/*--------------------------------------------------------*\
+                     LODGING LEFT SIDE
+\*--------------------------------------------------------*/
 .lodging_price {
     font-size: 0.8rem;
 }
@@ -55,9 +73,9 @@ h3 {
 .afficher-plus {
     padding-left: 27px;
 }
-.l-aside {
-    height: 100%;
-}
+/*--------------------------------------------------------*\
+                     LODGING RIGHT SIDE
+\*--------------------------------------------------------*/
 .lodging-as_img {
     flex: 5;
 }
@@ -79,6 +97,9 @@ h3 {
     left: -1%;
     top: -240%;
 }
+/*--------------------------------------------------------*\
+                        ACTIVITIES
+\*--------------------------------------------------------*/
 .activity {
     margin-right: 0;
 }
@@ -119,6 +140,9 @@ h3 {
     width: 399px;
     top: -39%;
 }
+/*--------------------------------------------------------*\
+                        FOOTER
+\*--------------------------------------------------------*/
 .footer_list h4 {
     font-size: 0.9rem;
 }

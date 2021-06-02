@@ -7,9 +7,10 @@
     padding: 0;
 }
 /*
-bleu #0065FC
-bleu clair #DEEBFF
-gris bg #F2F2F2
+Website color :
+- blue #0065FC
+- light blue #DEEBFF
+- grey background #F2F2F2
 */
 /*--------------------------------------------------------*\
                             BASE
@@ -163,7 +164,7 @@ a {
     width: 16%;
 }
 .search-bar input:focus {
-    outline: none; /*how to change outline color and cancel border radius*/
+    outline: none;
 }
 .search-bar ::placeholder {
     color: #000000;
