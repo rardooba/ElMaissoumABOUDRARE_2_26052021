@@ -17,6 +17,9 @@ h3 {
 p {
     font-size: 0.9rem;
 }
+.cannebiere, .hPort, .mouettes, .hMer, .lePanier, .hAmina, .soleilMatin, .coeurEau, .bleuBlanc, .vieuxPort, .fortPomegues, .frioul, .parcNational, .notreDame, .longChamp {
+    height: auto;
+}
 /*--------------------------------------------------------*\
                             Layout
 \*--------------------------------------------------------*/
@@ -219,6 +222,7 @@ input[type="search"] {
 .lodging-as_txtbox {
     padding: 11px 0 0 7px;
 }
+
 .soleilMatin {
     left: -34%;
     top: -36%;
@@ -234,7 +238,6 @@ input[type="search"] {
     left: -14%;
     top: -141%;
 }
-/*-
 /*--------------------------------------------------------*\
                         ACTIVITIES
 \*--------------------------------------------------------*/
@@ -254,6 +257,7 @@ input[type="search"] {
     padding: 8px 10px;
     margin-bottom: 6px;
 }
+
 .vieuxPort {
     width: 337px;
     left: 0%;

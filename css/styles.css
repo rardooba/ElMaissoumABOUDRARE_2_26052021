@@ -6,12 +6,19 @@
     margin: 0;
     padding: 0;
 }
-/*
+
+/*--------------------------------------------------------*\
+                            COLOR
+
 Website color :
 - blue #0065FC
 - light blue #DEEBFF
 - grey background #F2F2F2
-*/
+\*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*\
+                            FONTS
+\*--------------------------------------------------------*/
 @font-face {
     font-family: "Raleway_bold";
     src: url("../fonts/Raleway-Bold.ttf") format("truetype");
@@ -288,47 +295,11 @@ input[type="search"] {
     margin: 3px 3px 10px 3px;
     border-radius: 10px 10px 0 0;
 }
-.cannebiere {
-    width: 219px;
+.cannebiere, .hPort, .mouettes, .hMer, .lePanier, .hAmina, .soleilMatin, .coeurEau, .bleuBlanc, .vieuxPort, .fortPomegues, .frioul, .parcNational, .notreDame, .longChamp {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: -8%;
-    top: -22%;
-    background-size: cover;
-}
-.hPort {
-    width: 204px;
-    position: absolute;
-    left: -1%;
-    top: -21%;
-    background-size: cover;
-}
-.mouettes {
-    width: 218px;
-    position: absolute;
-    left: -3%;
-    top: -24%;
-    background-size: cover;
-}
-.hMer { 
-    width: 206px;
-    position: absolute;
-    left: 0%;
-    top: -47%;
-    background-size: cover;
-}
-.lePanier {
-    width: 209px;
-    position: absolute;
-    left: -3%;
-    top: -12%;
-    background-size: cover;
-}
-.hAmina {
-    width: 206px;
-    position: absolute;
-    left: -2%;
-    top: -101%;
-    background-size: cover;
+    object-fit: cover;
 }
 .lodging_txtbox {
     padding: 0 10px 0 10px;
@@ -392,27 +363,6 @@ input[type="search"] {
     border-radius: 10px 0 0 10px;
     flex: 3;
 }
-.soleilMatin {
-    width: 164px;
-    position: absolute;
-    left: -76%;
-    top: -4%;
-    background-size: cover;
-}
-.coeurEau{
-    width: 142px;
-    position: absolute;
-    left: -57%;
-    top: -5%;
-    background-size: cover;
-}
-.bleuBlanc {
-    width: 105px;
-    position: absolute;
-    left: -20%;
-    top: -34%;
-    background-size: cover;
-}
 .lodging-as_txtbox {
     padding: 11px 0 0 13px;
     flex: 5;
@@ -469,48 +419,6 @@ input[type="search"] {
 }
 .activity_img--small, .small {
     height: 130px;
-}
-.vieuxPort {
-    width: 541px;
-    position: absolute;
-    left: -66%;
-    top: 0%;
-    background-size: cover;
-}
-.fortPomegues {
-    width: 246px;
-    position: absolute;
-    left: -1%;
-    top: -44%;
-    background-size: cover;
-}
-.frioul {
-    width: 295px;
-    position: absolute;
-    left: -22%;
-    top: -26%;
-    background-size: cover;
-}
-.parcNational {
-    width: 545px;
-    position: absolute;
-    left: -65%;
-    top: 0%;
-    background-size: cover;
-}
-.notreDame {
-    width: 346px;
-    position: absolute;
-    left: -21%;
-    top: -30%;
-    background-size: cover;
-}
-.longChamp {
-    width: 286px;
-    position: absolute;
-    left: -10%;
-    top: -11%;
-    background-size: cover;
 }
 /*--------------------------------------------------------*\
                         FOOTER

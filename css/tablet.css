@@ -86,21 +86,6 @@ input[type="search"] {
 .lodging-as_box:hover{
     transform: none;
 }
-.soleilMatin {
-    left: -2%;
-    top: -117%;
-    width: 363px;
-}
-.coeurEau {
-    width: 335px;
-    left: 0%;
-    top: -81%;
-}
-.bleuBlanc {
-    width: 335px;
-    left: -1%;
-    top: -240%;
-}
 /*--------------------------------------------------------*\
                         ACTIVITIES
 \*--------------------------------------------------------*/
@@ -117,32 +102,6 @@ input[type="search"] {
 }
 .activity_img--long, .activity_img--medium, .activity_img--small {
     width: 333px;
-}
-.vieuxPort {
-    width: 556px;
-    left: -66%;
-    top: -15%;
-}
-.fortPomegues {
-    width: 344px;
-    top: -109%;
-}
-.frioul {
-    width: 409px;
-    top: -81%;
-}
-.parcNational {
-    width: 554px;
-    left: -39%;
-    top: -15%;
-}
-.notreDame {
-    width: 407px;
-    top: -30%;
-}
-.longChamp {
-    width: 399px;
-    top: -39%;
 }
 /*--------------------------------------------------------*\
                         FOOTER
