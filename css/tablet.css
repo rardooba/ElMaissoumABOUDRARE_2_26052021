@@ -43,6 +43,9 @@ h3 {
 }
 .search-bar input {
     width: 91%;
+}
+input[type="search"] {
+    -webkit-appearance: none;
     border-radius: 0;
 }
 .search-bar_submit::after {

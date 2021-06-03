@@ -107,6 +107,9 @@ p {
     width: 79%;
     height: 40px;
     font-size: 0.9rem;
+}
+input[type="search"] {
+    -webkit-appearance: none;
     border-radius: 0;
 }
 .search-bar_submit::after {
