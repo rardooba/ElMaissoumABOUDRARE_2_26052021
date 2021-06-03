@@ -2,14 +2,20 @@
                             BASE
 \*--------------------------------------------------------*/
 .main-wrapper {
-    width: 275px;
+    width: 375px;
     margin: auto;
 }
+.mainContent {
+    padding: 0;
+}
 h1, h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 h3 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+}
+p {
+    font-size: 0.9rem;
 }
 /*--------------------------------------------------------*\
                             Layout
@@ -19,6 +25,12 @@ h3 {
 }
 .l-header {
     display: block;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
+.l-search {
+    padding: 150px 15px 0 15px;
 }
 .l-lodging {
     background-color: transparent;
@@ -39,17 +51,20 @@ h3 {
 \*--------------------------------------------------------*/
 .logo {
     margin-bottom: 15px;
+    padding: 0 15px;
 }
 .navigation {
     position: relative;
 }
 .sign-in {
     position: absolute;
-    top: -42px;
-    right: 0px;
+    top: -45px;
+    right: 15px;
+    font-size: 0.9rem;
 }
 .navigation_ul a {
-    padding: 0 21px 15px;
+    background-color: #fff;
+    padding: 0px 50px 12px;
     border-bottom: 2px solid #F2F2F2;
 }
 .navigation_ul a:hover {
@@ -58,18 +73,35 @@ h3 {
 }
 .navigation_ul li {
     margin-right: 0;
+    font-size: 1rem;
 }
 /*--------------------------------------------------------*\
                     LODGING SEARCH BAR
 \*--------------------------------------------------------*/
+.search_title h2 {
+    line-height: 25px;
+}
 .search_title p, .filter-result {
-    font-size: 0.65rem;
+    font-size: 1rem;
+    letter-spacing: 0;
+    margin-top: 10px;
 }
 .search-bar {
     position: relative;
 }
+.search-bar label {
+    width: 40px;
+    height: 40px;
+    padding: 12px 14px;
+}
+.search-bar_icon {
+    font-size: 1rem;
+}
 .search-bar input {
-    width: 75%;
+    width: 79%;
+    height: 40px;
+    font-size: 0.9rem;
+
 }
 .search-bar_submit::after {
     font-family: "Font Awesome 5 Free", serif;
@@ -78,7 +110,7 @@ h3 {
 }
 .search-bar_submit {
     border-radius: 10px;
-    padding: 10px;
+    padding: 13px;
     position: absolute;
     right: 4px;
 }
@@ -91,34 +123,83 @@ h3 {
 .filter-cat {
     margin-top: 10px;
 }
+.filter_cat_icon {
+    height: 40px;
+    width: 40px;
+    font-size: 0.9rem;
+    padding: 13px 6px;
+}
 .filter_cat_label {
-    margin: 0 5px 5px 0;
+    margin: 0 9px 9px 0;
 }
 .filter-result {
-    width: 236px;
+    width: 100%;
     display: block;
     position: relative;
-    padding-left: 23px;
+    padding-left: 30px;
 }
 .filter-result_icon {
+    width: 25px;
+    height: 25px;
     position: absolute;
     left: 0;
-    top: -5px;
+    top: -3px;
+    font-size: 0.7rem;
 }
 /*--------------------------------------------------------*\
                      LODGING LEFT SIDE
 \*--------------------------------------------------------*/
+.lodging_box {
+    width: 100%;
+    height: 182px;
+}
 .lodging_box:hover, .lodging-as_box:hover {
     transform: none;
 }
-.lodging_h2, .aside_title h2, .activities_title {
-    font-size: 0.8rem;
+.lodging_h2, .aside_title, .activities_title {
+    font-size: 1.4rem;
+}
+.lodging_title {
+    padding-right: 21px;
 }
 .lodging_price {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+}
+.lodging-as_stars {
+    margin-top: 12px;
 }
 .fa-star {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+}
+.cannebiere {
+    width: 334px;
+    left: -3%;
+    top: -66%;
+}
+.hPort {
+    width: 334px;
+    left: -1%;
+    top: -81%;
+}
+.mouettes {
+    width: 330px;
+    left: -1%;
+    top: -87%;
+}
+.hMer { 
+    width: 327px;
+    left: 0%;
+    top: -123%;
+}
+.lePanier {
+    width: 333px;
+    left: -1%;
+    top: -52%;
+}
+.hAmina {
+    width: 331px;
+    left: -1%;
+    top: -221%;
 }
 /*--------------------------------------------------------*\
                      LODGING RIGHT SIDE
@@ -129,6 +210,22 @@ h3 {
 .lodging-as_txtbox {
     padding: 11px 0 0 7px;
 }
+.soleilMatin {
+    left: -34%;
+    top: -36%;
+    width: 214px;
+}
+.coeurEau {
+    width: 192px;
+    left: -36%;
+    top: -36%;
+}
+.bleuBlanc {
+    width: 203px;
+    left: -14%;
+    top: -141%;
+}
+/*-
 /*--------------------------------------------------------*\
                         ACTIVITIES
 \*--------------------------------------------------------*/
@@ -139,44 +236,54 @@ h3 {
     margin-right: 0;
 }
 .activity_img--long, .activity_img--medium, .activity_img--small {
-    width: 191px;
+    width: 100%;
 }
 .activity_img--long, .long, .activity_img--medium, .medium, .activity_img--medium, .medium  {
-    height: 110px;
+    height: 170px;
 }
 .activity_title {
     padding: 8px 10px;
     margin-bottom: 6px;
 }
 .vieuxPort {
-    width: 325px;
+    width: 337px;
     left: 0%;
-    top: -53%;
+    top: -18%;
 }
 .fortPomegues {
-    width: 200px;
-    top: -157%;
+    width: 334px;
+    left: 0%;
+    top: -129%;
 }
 .frioul {
-    width: 240px;
-    top: -15%;
+    width: 332px;
+    left: 0%;
+    top: -60%;
 }
 .parcNational {
-    width: 276px;
-    left: -39%;
-    top: -97%;
+    width: 334px;
+    left: 0%;
+    top: -45%;
 }
 .notreDame {
-    width: 240px;
-    top: -11%;
+    width: 334px;
+    left: 0%;
+    top: -30%;
 }
 .longChamp {
-    width: 230px;
-    top: -60%;
+    width: 334px;
+    left: 0%;
+    top: -45%;
 }
 /*--------------------------------------------------------*\
                         FOOTER
 \*--------------------------------------------------------*/
+.footer_list h4, .footer_list ul {
+    font-size: 0.9rem;
+}
 .footer_list {
     margin-bottom: 25px;
+}
+.footer_list ul li {
+    margin-bottom: 9px;
 }

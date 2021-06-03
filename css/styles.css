@@ -12,6 +12,10 @@ Website color :
 - light blue #DEEBFF
 - grey background #F2F2F2
 */
+@font-face {
+    font-family: "Raleway_bold";
+    src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
 /*--------------------------------------------------------*\
                             BASE
 \*--------------------------------------------------------*/
@@ -31,10 +35,11 @@ html, body {
     background-color: #F2F2F2;
 }
 h1, h2 {
+    font-family: 'Raleway_bold', Arial, sans-serif;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 h3 {
+    font-family: 'Raleway_bold', Arial, sans-serif;
     font-size: 0.8rem;
 }
 p {
@@ -120,7 +125,7 @@ a {
     color: #0065FC;
 }
 .sign-in {
-    font-weight: bold;
+    font-family: 'Raleway_bold', Arial, sans-serif;
     color: #0065FC;
     cursor: pointer;
     padding-left: 15px;
@@ -158,8 +163,7 @@ a {
     height: 35px;
     border: 1px solid #F2F2F2;
     padding-left: 14px;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'Raleway_bold', Arial, sans-serif;
     font-size: 0.8rem;
     width: 16%;
 }
@@ -197,7 +201,7 @@ a {
     margin-right: 20px;
 }
 .filter p {
-    font-weight: bold;
+    font-family: 'Raleway_bold', Arial, sans-serif;
     color: #000000;
 }
 .filter_cat_icon {
@@ -339,6 +343,7 @@ a {
     color: #F2F2F2;
 }
 .afficher-plus {
+    font-family: 'Raleway_bold', Arial, sans-serif;
     padding-left: 22px;
     margin-bottom: 22px;
 }
@@ -510,8 +515,8 @@ a {
     flex : 1;
 }
 .footer_list h4 {
+    font-family: 'Raleway_bold', Arial, sans-serif;
     font-size: 0.8rem;
-    font-weight: bold;
     margin-bottom: 15px;
 }
 .footer_list ul {
