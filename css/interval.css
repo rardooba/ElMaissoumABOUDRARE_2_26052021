@@ -45,7 +45,7 @@ h3 {
 }
 .search-bar input {
     width: 91%;
-    border-radius: none;
+    border-radius: 0;
 }
 .search-bar_submit::after {
     font-family: "Font Awesome 5 Free", serif;
