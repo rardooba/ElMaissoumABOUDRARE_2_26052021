@@ -40,8 +40,7 @@ html, body {
     padding: 0 20px;
 }
 .mainFooter {
-    /*background-color: #F2F2F2;*/
-    background-color: red;*
+    background-color: #F2F2F2;
 }
 h1, h2 {
     font-family: 'Raleway_bold', Arial, sans-serif;
@@ -297,9 +296,15 @@ input[type="search"] {
     margin: 3px 3px 10px 3px;
     border-radius: 10px 10px 0 0;
 }
-.cannebiere, .hPort, .mouettes, .hMer, .lePanier, .hAmina, .soleilMatin, .coeurEau, .bleuBlanc, .vieuxPort, .fortPomegues, .frioul, .parcNational, .notreDame, .longChamp {
+.cannebiere, .hPort, .mouettes, .hMer, .lePanier, .hAmina, .soleilMatin, .coeurEau, .bleuBlanc, .vieuxPort, .fortPomegues, .frioul, .parcNational, .longChamp {
     width: 100%;
     height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+/*Coralie Dedicate*/
+.notreDame {
+    width: 100%;
     position: absolute;
     object-fit: cover;
 }
